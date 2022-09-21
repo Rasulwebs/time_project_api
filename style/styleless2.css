@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.body_background {
+    z-index: -2;
+    position: fixed;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+}
+
+.bg-opacity-body {
+    z-index: -1;
+    position: fixed;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+.header_title {
+    font-size: 53px;
+
+}
+
+.title_bottom_hr {
+    max-width: 1300px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.box {
+    max-width: 200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.188);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    box-shadow: rgba(191, 176, 176, 0.234) 0px 54px 55px, rgba(185, 184, 184, 0.2) 0px -12px 30px, rgba(137, 137, 137, 0.182) 0px 4px 6px, rgba(184, 180, 180, 0.17) 0px 12px 13px, rgba(141, 141, 141, 0.09) 0px -3px 5px;
+}
+.box h3{
+    opacity: 1;
+    color: #FFC700;
+}
+.box h4{
+    opacity: 1;
+    color: #fff;
+}
+
+.box:hover {
+   
+    background-color: rgba(255, 255, 255, 0.331);
+    backdrop-filter: blur(2px);
+
+}
+.hudud{
+    float: right;
+    color: #fff;
+}
+.hudud1{
+    margin-bottom: 20px;
+}
+.form-select{
+    max-width: 200px;
+    width: 100%;
+}
+
+.card-img {
+    max-width: 190px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.card-img:hover {
+    transform: scale(0.95);
+}
+.title_bottom_hr2{
+    max-width: 1300px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    display: none;
+}
+#clockk{
+    color: #fff;
+    
+}
+.timeNow{
+    color: #FFC700;
+}
+@media only screen and (max-width:992px){
+    .body_background {
+      
+        width: 100%;
+        height: 100vh;
+        
+    
+    }
+    .form-select{
+        margin: auto;
+        max-width: 300px;
+        width: 100%;
+    }
+    .hudud1{
+       text-align: center;
+       
+    }
+    .hudud{
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+body{
+    background-image: url(../images/body-bg20.png);
+
+}
+.body_background, .bg-opacity-body{
+    display: none;
+}
+.header{
+    background-color: #0B422D;
+    padding-bottom: 20px;
+}
+.title_bottom_hr{
+    display: none;
+}
+.hudud{
+    float:none;
+    background-color: #023926;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    color: #FFC700;
+    display: none;
+}
+
+.hudud_infoo{
+    margin-top: 30px;
+    background-color: #023926;
+    border-radius: 28px;
+    padding-bottom: 10px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+.hudud_select{
+   margin-top: 0;
+}
+#region_select{
+    margin: auto;
+    text-align: center;
+}
+.mintaqa{
+    display: none;
+}
+.calendar{
+    display: none;
+}
+.region_info{
+    font-size: 30px;
+    color: #FFC700;
+}
+.form-select{
+    background: transparent;
+    outline: none;
+    color: orange;
+    border-radius: 0px;
+    padding: 7px 20px;
+    /* border: transparent 1px solid; */
+    outline: none;
+    font-size: 25px;
+    /* border: none; */
+}
+option{
+    color: #000;
+}
+.region_info{
+    display: none;
+}
+.card{
+    background-color: #008653;
+}
+.box:hover {
+   
+    background-color: #0086538c;
+    backdrop-filter: blur(2px);
+
+}
+#clockk{
+    text-align: center;
+    
+}
+.timeNow{
+    color: #FFC700;
+}
+.clock_info{
+    text-align: center;
+}
+}
+
+@media only screen and (max-width:375px){
+    .form-select{
+        background: transparent;
+        outline: none;
+        color:#FFC700;
+        border-radius: 0px;
+        padding: 7px 20px;
+        /* border: transparent 1px solid; */
+        outline: none;
+        font-size: 20px;
+        /* border: none; */
+    }
+    option{
+        background-color:#0B422D ;
+        color: #fff;
+    }
+}
