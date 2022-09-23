@@ -11,6 +11,7 @@ const provencie = [
     "Jizzax",
     "Buxoro",
     "Sirdaryo",
+    "Qoraqalpog'iston"
  ];
  
  

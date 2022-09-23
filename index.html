@@ -11,7 +11,11 @@
 
     <!-- icons -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- main css -->
@@ -26,11 +30,22 @@
     <div class="bg-opacity-body"></div>
 
     <header class="header pt-5">
-        <div class="container">
+        <div class=" mx-auto container">
             <h1 class="text-light
     header_title text-center">Namoz vaqtlari</h1>
 
-            <div class="title_bottom_hr mx-auto mb-5"></div>
+            <div class="theme">
+                <input type="checkbox" class="checkbox" id="checkbox">
+
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+
+            <div class=" title_bottom_hr mx-auto mb-5"></div>
         </div>
     </header>
 
@@ -38,13 +53,13 @@
         <div class="container mb-4">
             <section>
                 <div class="row hudud_infoo">
-                    <div class="col-lg-6 col-md-12 col-sm-12 hudud1 ">
+                    <div class="col-lg-6 col-md-12 col-sm-12  hudud1 ">
                         <h3 class="hudud">
                             Hududni tanlang:
                         </h3>
-                        
+
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-12 hudud_select mb-5">
                         <select class="form-select  rounded-pill " id="region_select">
                             <option disabled selected class="one_opt">Hududni tanlang</option>
@@ -67,7 +82,7 @@
 
                         </div>
                         <div class="ms-4 clock_info  text-center text-light">
-<h3 class="text-light" id="clockk"></h3>
+                            <h3 class="text-light" id="clockk"></h3>
                         </div>
 
                     </div>
@@ -129,6 +144,60 @@
                     </div>
 
 
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <h2 class="week_title text-center text-warning">Bir haftalik jadval</h2>
+                        <div class="week_table_wrapp table-responsive-lg table-responsive-md table-responsive-sm">
+                            <table class="week_table table table-success table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Mintaqa</th>
+                                        <th>sana</th>
+                                        <th>kun</th>
+                                        <th>Bomdod</th>
+                                        <th>Quyosh</th>
+                                        <th>Peshin</th>
+                                        <th>Asr</th>
+                                        <th>Shom</th>
+                                        <th>Hufton</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="week">
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h2 class="month_title text-center text-warning">Bir oylik jadval</h2>
+                    <div class=" month_table_wrapp table-responsive-lg table-responsive-md table-responsive-sm ">
+                        <table class="month_table table table-warning table-bordered table-hover ">
+                            <thead>
+                                <tr>
+                                    <th>Mintaqa</th>
+                                    <th>sana</th>
+                                    <th>kun</th>
+                                    <th>Bomdod</th>
+                                    <th>Quyosh</th>
+                                    <th>Peshin</th>
+                                    <th>Asr</th>
+                                    <th>Shom</th>
+                                    <th>Hufton</th>
+                                </tr>
+                            </thead>
+                            <tbody id="month">
+
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
             </section>
 
